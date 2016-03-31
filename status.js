@@ -63,6 +63,10 @@ Item.prototype = {
     this.val -= (amount !== undefined) ? amount : 1;
   },
 
+  val: function(amount){
+    return this.val;
+  },
+
   toString: function() {
     var nums = " " + this.name + ": ",
       types = this.type;
